@@ -21,6 +21,7 @@ We follow the PSR-2 coding style with additional rules.
  - no more 3 nesting identation levels
  - minimal length of naming (function, variable, constant...) is 3 chars (except for i, id, em, om, to, ID, TO)
  - object instantiation must always be with parentheses
+ - must have blank line before return statement 
 
 ## Testing
 

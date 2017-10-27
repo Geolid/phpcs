@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="geolid">
-    <config name="installed_paths" value="vendor/object-calisthenics/phpcs-calisthenics-rules/src/,vendor/wp-coding-standards/wpcs/"/>
+    <config name="installed_paths" value="vendor/object-calisthenics/phpcs-calisthenics-rules/src/,vendor/wp-coding-standards/wpcs/,vendor/escapestudios/symfony2-coding-standard/Symfony/"/>
     <autoload>./vendor/wp-coding-standards/wpcs/WordPress/PHPCSAliases.php</autoload>
 
     <description>geolid ruleset</description>
@@ -43,4 +43,5 @@
             <property name="minLength" value="3"/>
         </properties>
     </rule>
+    <rule ref="Symfony.Formatting.BlankLineBeforeReturn" />
 </ruleset>
