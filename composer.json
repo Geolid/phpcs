@@ -3,6 +3,7 @@
     "description": "Official Geolid coding standard.",
     "homepage": "https://github.com/Geolid/phpcs",
     "type": "library",
+    "license": "MIT",
     "keywords": [
         "phpcs"
     ],
