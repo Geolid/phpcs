@@ -7,4 +7,4 @@ php:
 before_script:
   - composer install
 
-script: tests/tests.sh
+script: bash tests/tests.sh
