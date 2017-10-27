@@ -8,4 +8,4 @@ before_script:
   - composer install
 
 script:
-  - bash tests/tests.sh
+  - composer test

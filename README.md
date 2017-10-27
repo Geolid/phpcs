@@ -6,7 +6,7 @@ Phpcs used at geolid
 
     composer require geolid/phpcs
 
-after require, copy in your path : phpcs.dist.xml and rename to phpcs.xml
+after require, copy in your path : phpcs.xml.dist and rename to phpcs.xml
 
 ## Description
 
@@ -21,3 +21,7 @@ We follow the PSR-2 coding style with additional rules.
  - no more 3 nesting identation levels
  - minimal length of naming (function, variable, constant...) is 3 chars (except for i, id, em, om, to, ID, TO)
  - object instantiation must always be with parentheses
+
+## Testing
+
+    composer test

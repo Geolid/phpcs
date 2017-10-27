@@ -1,10 +1,11 @@
 {
     "name": "geolid/phpcs",
     "description": "Official Geolid coding standard.",
+    "homepage": "https://github.com/Geolid/phpcs",
+    "type": "library",
     "keywords": [
         "phpcs"
     ],
-    "type": "library",
     "require": {
         "php" : "^7.1",
         "object-calisthenics/phpcs-calisthenics-rules": "^3.1",
@@ -14,5 +15,7 @@
     "config": {
         "sort-packages": true
     },
-    "homepage": "https://github.com/Geolid/phpcs"
+    "scripts": {
+        "test": "vendor/bin/phpcs --standard=src/Geolid/ruleset.xml tests/Example/"
+    }
 }
