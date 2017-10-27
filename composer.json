@@ -5,7 +5,9 @@
     "type": "library",
     "license": "MIT",
     "keywords": [
-        "phpcs"
+        "standards"
+        "phpcs",
+        "coding style"
     ],
     "require": {
         "php": "^7.1",
