@@ -5,7 +5,7 @@
     "type": "library",
     "license": "MIT",
     "keywords": [
-        "standards"
+        "standards",
         "phpcs",
         "coding style"
     ],
