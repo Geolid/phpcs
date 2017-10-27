@@ -1,12 +1,25 @@
 # Geolid PHP Coding Style [![Build Status](https://travis-ci.org/Geolid/phpcs.svg?branch=master)](https://travis-ci.org/Geolid/phpcs)
 
-Phpcs used at geolid
+PHPCS ruleset used at Geolid
 
 ## Installation
 
     composer require geolid/phpcs
 
-after require, copy in your path : phpcs.xml.dist and rename to phpcs.xml
+You only need this package, no need to require manually `squizlabs/php_codesniffer`
+
+after require, copy in your path : `phpcs.xml.dist` and rename to `phpcs.xml̀`
+or add the rule below in your existing `phpcs.xml`
+
+```xml
+<rule ref="./vendor/geolid/phpcs/src/Geolid/ruleset.xml" />
+```
+
+## Usage
+
+Use phpcs normally
+
+    vendor/bin/phpcs
 
 ## Description
 
@@ -21,7 +34,7 @@ We follow the PSR-2 coding style with additional rules.
  - no more 3 nesting identation levels
  - minimal length of naming (function, variable, constant...) is 3 chars (except for i, id, em, om, to, ID, TO)
  - object instantiation must always be with parentheses
- - must have blank line before return statement 
+ - must have blank line before return statement
 
 ## Testing
 
