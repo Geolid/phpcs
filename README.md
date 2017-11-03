@@ -4,7 +4,7 @@ PHPCS ruleset used at Geolid
 
 ## Installation
 
-    composer require geolid/phpcs
+    composer require --dev geolid/phpcs
 
 You only need this package, no need to require manually `squizlabs/php_codesniffer`
 
