@@ -35,6 +35,11 @@ We follow the PSR-2 coding style with additional rules.
  - minimal length of naming (function, variable, constant...) is 3 chars (except for i, id, em, om, to, ID, TO)
  - object instantiation must always be with parentheses
  - must have blank line before return statement
+ - must have one space before return typehint
+    ```php
+    public function foo(): self {}
+    ```
+
 
 ## Testing
 
