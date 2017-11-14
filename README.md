@@ -39,6 +39,7 @@ We follow the PSR-2 coding style with additional rules.
     ```php
     public function foo(): self {}
     ```
+ - php must contains ```declare(strict_types=1);``` with one blank line between declaration and php open tag
 
 
 ## Testing
