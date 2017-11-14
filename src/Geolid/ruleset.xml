@@ -45,6 +45,13 @@
     </rule>
     <rule ref="Symfony.Formatting.BlankLineBeforeReturn" />
 
+
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
+            <property name="spacesCountAroundEqualsSign" value="0"/>
+        </properties>
+    </rule>
     <!--TODO : change it when implement in generic rules : https://github.com/squizlabs/PHP_CodeSniffer/pull/1219 -->
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
 </ruleset>
