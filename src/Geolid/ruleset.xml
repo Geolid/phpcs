@@ -43,8 +43,12 @@
             <property name="minLength" value="3"/>
         </properties>
     </rule>
-    <rule ref="Symfony.Formatting.BlankLineBeforeReturn" />
 
+    <rule ref="Symfony.Formatting.BlankLineBeforeReturn" />
+    <rule ref="Symfony.NamingConventions.ValidClassName" />
+    <rule ref="Symfony.NamingConventions.ValidClassName.InvalidAbstractName">
+        <exclude-pattern>*TestCase.php</exclude-pattern>
+    </rule>
 
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
         <properties>
