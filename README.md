@@ -41,7 +41,7 @@ We follow the PSR-2 coding style with additional rules.
     ```
  - php must contains ```declare(strict_types=1);``` with one blank line between declaration and php open tag
 
-### naming
+### naming
 
  - Prefix all abstract classes with Abstract except PHPUnit *TestCase. (name of empty abstract not detected for moment)
  - Suffix interfaces with Interface
