@@ -59,4 +59,6 @@
     <!--TODO : change it when implement in generic rules : https://github.com/squizlabs/PHP_CodeSniffer/pull/1219 -->
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
+    <!--TODO : remove when phpcs-psr12 is in master -->
+    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
 </ruleset>
