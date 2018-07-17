@@ -27,6 +27,9 @@
     <!-- Array must be in short syntax -->
     <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
 
+    <!-- one space after cast -->
+    <rule ref="Generic.Formatting.SpaceAfterCast" />
+
     <!-- multiline arrays must have comma in all line -->
     <rule ref="WordPress.Arrays.CommaAfterArrayItem" />
     <rule ref="WordPress.Classes.ClassInstantiation" />
