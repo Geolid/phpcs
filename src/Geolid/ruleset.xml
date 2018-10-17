@@ -64,4 +64,5 @@
     <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
     <!--TODO : remove when phpcs-psr12 is in master -->
     <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>
 </ruleset>

@@ -42,6 +42,7 @@ We follow the PSR-2 coding style with additional rules.
     ```
  - Php must contains ```declare(strict_types=1);``` with one blank line between declaration and php open tag.
  - Visibility MUST be declared on all constants  (PSR-12).
+ - No unused imports (`use` statements). 
 
 ### naming
 
