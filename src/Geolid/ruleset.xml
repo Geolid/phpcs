@@ -17,18 +17,20 @@
         <type>error</type>
     </rule>
 
+    <rule ref="PSR12.Operators.OperatorSpacing" />
+
+    <!-- Array - must be in short syntax -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
+
+    <!-- one space after cast -->
+    <rule ref="Generic.Formatting.SpaceAfterCast" />
+
     <!-- concatenation must have 1 space -->
     <rule ref="Squiz.Strings.ConcatenationSpacing">
         <properties>
             <property name="spacing" value="1" />
         </properties>
     </rule>
-
-    <!-- Array must be in short syntax -->
-    <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
-
-    <!-- one space after cast -->
-    <rule ref="Generic.Formatting.SpaceAfterCast" />
 
     <!-- multiline arrays must have comma in all line -->
     <rule ref="WordPress.Arrays.CommaAfterArrayItem" />
