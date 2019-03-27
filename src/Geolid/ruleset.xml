@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="geolid">
     <config name="installed_paths" value="vendor/object-calisthenics/phpcs-calisthenics-rules/src/,vendor/wp-coding-standards/wpcs/,vendor/escapestudios/symfony2-coding-standard/Symfony/,vendor/slevomat/coding-standard/"/>
-    <autoload>./vendor/wp-coding-standards/wpcs/WordPress/PHPCSAliases.php</autoload>
 
     <description>geolid ruleset</description>
 
@@ -17,7 +16,9 @@
         <type>error</type>
     </rule>
 
+    <rule ref="PSR12.Functions.NullableTypeDeclaration" />
     <rule ref="PSR12.Operators.OperatorSpacing" />
+    <rule ref="PSR12.Keywords.ShortFormTypeKeywords" />
 
     <!-- Array - must be in short syntax -->
     <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
