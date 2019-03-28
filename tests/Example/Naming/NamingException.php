@@ -6,5 +6,4 @@ namespace Example\Naming;
 
 class NamingException extends \Exception
 {
-
 }

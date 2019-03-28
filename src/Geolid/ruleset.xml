@@ -4,8 +4,6 @@
 
     <description>geolid ruleset</description>
 
-    <rule ref="PSR2" />
-
     <!-- Private methods MUST not be prefixed with an underscore -->
     <rule ref="PSR2.Methods.MethodDeclaration.Underscore">
         <type>error</type>
@@ -16,26 +14,8 @@
         <type>error</type>
     </rule>
 
-    <rule ref="PSR12.Functions.NullableTypeDeclaration" />
     <rule ref="PSR12.Operators.OperatorSpacing" />
     <rule ref="PSR12.Keywords.ShortFormTypeKeywords" />
-
-    <!-- Array - must be in short syntax -->
-    <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
-
-    <!-- one space after cast -->
-    <rule ref="Generic.Formatting.SpaceAfterCast" />
-
-    <!-- concatenation must have 1 space -->
-    <rule ref="Squiz.Strings.ConcatenationSpacing">
-        <properties>
-            <property name="spacing" value="1" />
-        </properties>
-    </rule>
-
-    <!-- multiline arrays must have comma in all line -->
-    <rule ref="WordPress.Arrays.CommaAfterArrayItem" />
-    <rule ref="WordPress.Classes.ClassInstantiation" />
 
     <rule ref="ObjectCalisthenics.Metrics.MaxNestingLevel">
         <properties>
@@ -50,7 +30,6 @@
         </properties>
     </rule>
 
-    <rule ref="Symfony.Formatting.BlankLineBeforeReturn" />
     <rule ref="Symfony.NamingConventions.ValidClassName" />
     <rule ref="Symfony.NamingConventions.ValidClassName.InvalidAbstractName">
         <exclude-pattern>*TestCase.php</exclude-pattern>
@@ -62,14 +41,8 @@
             <property name="spacesCountAroundEqualsSign" value="0"/>
         </properties>
     </rule>
-    <!--TODO : change it when implement in generic rules : https://github.com/squizlabs/PHP_CodeSniffer/pull/1219 -->
-    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
+
     <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
     <!--TODO : remove when phpcs-psr12 is in master -->
     <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
-    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
-        <properties>
-            <property name="searchAnnotations" value="true"/>
-        </properties>
-    </rule>
 </ruleset>

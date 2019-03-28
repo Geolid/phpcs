@@ -1,0 +1,18 @@
+<?php
+
+declare(strict_types=1);
+
+use PhpCsFixer\Finder;
+
+$config = include __DIR__ . '/src/Geolid/.php_cs.php';
+
+return $config
+    ->setFinder(Finder::create()
+        ->in([
+            __DIR__.'/src',
+            __DIR__.'/public/index.php',
+            __DIR__.'/config/bundles.php',
+        ])
+        ->append([__FILE__])
+    )
+;
