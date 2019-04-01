@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use PhpCsFixer\Finder;
 
-$config = include __DIR__ . '/src/Geolid/.php_cs.php';
+$config = include __DIR__ . '/vendor/geolid/phpcs/src/Geolid/.php_cs.php';
 
 return $config
     ->setFinder(Finder::create()
