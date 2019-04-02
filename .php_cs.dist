@@ -10,9 +10,10 @@ return $config
     ->setFinder(Finder::create()
         ->in([
             __DIR__.'/src',
+        ])
+        ->append([
             __DIR__.'/public/index.php',
             __DIR__.'/config/bundles.php',
         ])
-        ->append([__FILE__])
     )
 ;
