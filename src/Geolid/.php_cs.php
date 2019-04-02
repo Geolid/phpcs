@@ -19,7 +19,9 @@ return PhpCsFixer\Config::create()
             'spacing' => 'one',
         ],
         'native_function_invocation' => [
+            'include' => ['@compiler_optimized'],
             'scope' => 'all',
+            'strict' => true,
         ],
         'new_with_braces' => true,
         'no_unused_imports' => true,
