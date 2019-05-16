@@ -50,6 +50,7 @@ We follow the PSR-2 coding style with additional rules.
  - Visibility MUST be declared on all constants  (PSR-12).
  - No unused imports (`use` statements). 
  - Add leading \ before function invocation to speed up resolving.
+ - Only one use per line for traits.
 
 ### naming
 
