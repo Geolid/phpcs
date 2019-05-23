@@ -23,12 +23,17 @@ return PhpCsFixer\Config::create()
             'scope' => 'all',
             'strict' => true,
         ],
+        'native_function_type_declaration_casing' => true,
         'new_with_braces' => true,
         'no_unused_imports' => true,
+        'ordered_imports' => [
+            'sort_algorithm' => 'alpha',
+        ],
         'return_type_declaration' => [
             'space_before' => 'none',
         ],
         'short_scalar_cast' => true,
+        'single_trait_insert_per_statement' => true,
         'trailing_comma_in_multiline_array' => true,
     ])
     ->setRiskyAllowed(true)

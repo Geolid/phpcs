@@ -6,7 +6,7 @@ namespace Example\Naming;
 
 abstract class AbstractNaming
 {
-    public function superMethod($date): void
+    public function superMethod(int $number): void
     {
     }
 }

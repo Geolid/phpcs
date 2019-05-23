@@ -11,8 +11,8 @@
     ],
     "require": {
         "php": "^7.3",
-        "escapestudios/symfony2-coding-standard": "^3.5",
-        "friendsofphp/php-cs-fixer": "^2.14",
+        "escapestudios/symfony2-coding-standard": "^3.8",
+        "friendsofphp/php-cs-fixer": "^2.15.0",
         "object-calisthenics/phpcs-calisthenics-rules": "^3.5",
         "slevomat/coding-standard": "^5.0",
         "squizlabs/php_codesniffer": "^3.4"
