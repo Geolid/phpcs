@@ -39,7 +39,6 @@ We follow the PSR-2 coding style with additional rules.
  - Array must be in short syntax.
  - Trailing comma : multiline arrays must have comma in all line.
  - No more 3 nesting identation levels.
- - Minimal length of naming (function, variable, constant...) is 3 chars (except for i, id, em, om, to, ID, TO).
  - Object instantiation must always be with parentheses.
  - Must have blank line before return statement.
  - Must have one space before return typehint.
