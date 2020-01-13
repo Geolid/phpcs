@@ -18,4 +18,4 @@ $class->superMethod(
 $class->superMethod(
     5,
     6.0
-    );
+);
