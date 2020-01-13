@@ -18,6 +18,9 @@ return PhpCsFixer\Config::create()
         'concat_space' => [
             'spacing' => 'one',
         ],
+        'method_argument_space' => [
+            'on_multiline' => 'ensure_fully_multiline',
+        ],
         'native_function_invocation' => [
             'include' => ['@compiler_optimized'],
             'scope' => 'all',
