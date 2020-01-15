@@ -50,6 +50,7 @@ We follow the PSR-2 coding style with additional rules.
  - No unused imports (`use` statements). 
  - Add leading \ before function invocation to speed up resolving.
  - Only one use per line for traits.
+ - Parameters with a default null value needs ? before type declarations.
 
 ### naming
 

@@ -14,8 +14,3 @@ $class->superMethod(
     5,
     6.0,
 );
-
-$class->superMethod(
-    5,
-    6.0
-);
