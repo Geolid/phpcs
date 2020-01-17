@@ -18,6 +18,9 @@ return PhpCsFixer\Config::create()
         'concat_space' => [
             'spacing' => 'one',
         ],
+        'method_argument_space' => [
+            'on_multiline' => 'ensure_fully_multiline',
+        ],
         'native_function_invocation' => [
             'include' => ['@compiler_optimized'],
             'scope' => 'all',
@@ -25,7 +28,11 @@ return PhpCsFixer\Config::create()
         ],
         'native_function_type_declaration_casing' => true,
         'new_with_braces' => true,
+        'no_superfluous_phpdoc_tags' => [
+            'remove_inheritdoc' => true,
+        ],
         'no_unused_imports' => true,
+        'nullable_type_declaration_for_default_null_value' => true,
         'ordered_imports' => [
             'sort_algorithm' => 'alpha',
         ],
