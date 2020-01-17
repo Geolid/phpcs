@@ -38,6 +38,7 @@ We follow the PSR-2 coding style with additional rules.
  - One space after casting operator.
  - Array must be in short syntax.
  - Trailing comma : multiline arrays must have comma in all line.
+ - Trailing comma : multiline call must have comma in all line.
  - No more 3 nesting identation levels.
  - Object instantiation must always be with parentheses.
  - Must have blank line before return statement.
