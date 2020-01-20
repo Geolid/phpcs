@@ -33,33 +33,40 @@ We follow the PSR-2 coding style with additional rules.
 
 ## Additional rules :
 
- - Private methods and properties MUST not be prefixed with an underscore.
+### code quality
+ - Add leading \ before function invocation to speed up resolving.
+ - Parameters with a default null value needs ? before type declarations.
+ - No unused imports (`use` statements). 
+ - Php must contains ```declare(strict_types=1);``` with one blank line between declaration and php open tag.
+ - No more 3 nesting identation levels.
+
+### readability
+ - Array must be in short syntax.
  - One space around concatenation operator.
  - One space after casting operator.
- - Array must be in short syntax.
- - Trailing comma : multiline arrays must have comma in all line.
- - Trailing comma : multiline call must have comma in all line.
- - No more 3 nesting identation levels.
  - Object instantiation must always be with parentheses.
  - Must have blank line before return statement.
  - Must have one space before return typehint.
     ```php
     public function foo(): self {}
     ```
- - Php must contains ```declare(strict_types=1);``` with one blank line between declaration and php open tag.
- - Visibility MUST be declared on all constants  (PSR-12).
- - No unused imports (`use` statements). 
- - Add leading \ before function invocation to speed up resolving.
  - Only one use per line for traits.
- - Parameters with a default null value needs ? before type declarations.
+ - No empty phpdoc
+
+### PR readability
+ - Trailing comma : multiline arrays must have comma in all line.
+ - Trailing comma : multiline call must have comma in all line.
+
 
 ### naming
-
  - Prefix all abstract classes with Abstract except PHPUnit *TestCase. (name of empty abstract not detected for moment).
  - Suffix interfaces with Interface.
  - Suffix traits with Trait.
  - Suffix exceptions with Exception.
 
+###  PSR-12
+ - Visibility MUST be declared on all constants.
+ - Private methods and properties MUST not be prefixed with an underscore.
 
 ## Testing
 

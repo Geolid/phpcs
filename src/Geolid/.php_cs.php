@@ -28,6 +28,7 @@ return PhpCsFixer\Config::create()
         ],
         'native_function_type_declaration_casing' => true,
         'new_with_braces' => true,
+        'no_empty_phpdoc' => true,
         'no_superfluous_phpdoc_tags' => [
             'remove_inheritdoc' => true,
         ],
