@@ -31,6 +31,7 @@ return PhpCsFixer\Config::create()
         'no_empty_phpdoc' => true,
         'no_superfluous_phpdoc_tags' => [
             'remove_inheritdoc' => true,
+            'allow_mixed' => true,
         ],
         'no_unused_imports' => true,
         'nullable_type_declaration_for_default_null_value' => true,
