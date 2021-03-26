@@ -1,15 +1,13 @@
 <?xml version="1.0"?>
 <ruleset name="geolid">
-    <config name="installed_paths" value="vendor/object-calisthenics/phpcs-calisthenics-rules/src/,vendor/wp-coding-standards/wpcs/,vendor/escapestudios/symfony2-coding-standard/Symfony/,vendor/slevomat/coding-standard/"/>
+    <config name="installed_paths" value="vendor/object-calisthenics/phpcs-calisthenics-rules/src/,vendor/escapestudios/symfony2-coding-standard/Symfony/,vendor/slevomat/coding-standard/"/>
 
     <description>geolid ruleset</description>
 
-    <!-- Private methods MUST not be prefixed with an underscore -->
     <rule ref="PSR2.Methods.MethodDeclaration.Underscore">
         <type>error</type>
     </rule>
 
-    <!-- Private properties MUST not be prefixed with an underscore -->
     <rule ref="PSR2.Classes.PropertyDeclaration.Underscore">
         <type>error</type>
     </rule>
@@ -36,6 +34,9 @@
     </rule>
 
     <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
+
+    <rule ref="Geolid.Classes.AbstractOrFinalClassesOnly"/>
+
     <!--TODO : remove when phpcs-psr12 is in master -->
     <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
     <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>

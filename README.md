@@ -39,6 +39,7 @@ We follow the PSR-2 coding style with additional rules.
  - No unused imports (`use` statements). 
  - Php must contains ```declare(strict_types=1);``` with one blank line between declaration and php open tag.
  - No more 3 nesting identation levels.
+ - Classes must be declared "abstract" or "final".
 
 ### readability
  - Array must be in short syntax.

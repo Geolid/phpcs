@@ -20,6 +20,11 @@
     "config": {
         "sort-packages": true
     },
+    "autoload": {
+        "psr-4": {
+            "Geolid\\Phpcs\\": "src/Geolid/"
+        }
+    },
     "scripts": {
         "test": [
             "vendor/bin/phpcs --standard=src/Geolid/ruleset.xml tests/Example/",
