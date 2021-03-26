@@ -24,18 +24,14 @@ final class AbstractOrFinalClassesOnlySniff implements Sniff
             return;
         }
 
-        $fix = $phpcsFile->addFixableError(
+        if ($phpcsFile->addFixableError(
             'Class must be declared "Abstract" or "Final".',
             $stackPtr,
             self::CODE_MISSING_ABSTRACT_OR_FINAL
-        );
-
-        if (!$fix) {
-            return;
+        )) {
+            $phpcsFile->fixer->beginChangeset();
+            $phpcsFile->fixer->addContent($stackPtr - 1, 'final ');
+            $phpcsFile->fixer->endChangeset();
         }
-
-        $phpcsFile->fixer->beginChangeset();
-        $phpcsFile->fixer->addContent($stackPtr - 1, 'final ');
-        $phpcsFile->fixer->endChangeset();
     }
 }
