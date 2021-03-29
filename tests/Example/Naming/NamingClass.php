@@ -4,6 +4,6 @@ declare(strict_types=1);
 
 namespace Example\Naming;
 
-class NamingClass extends AbstractNaming
+final class NamingClass extends AbstractNaming
 {
 }
