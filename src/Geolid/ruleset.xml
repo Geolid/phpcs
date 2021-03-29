@@ -35,11 +35,6 @@
 
     <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
 
-    <rule ref="Geolid.Classes.AbstractOrFinalClassesOnly">
-        <!-- Doctrine: an entity class must not be final or contain final methods -->
-        <exclude-pattern type="relative">*/Domain/*</exclude-pattern>
-    </rule>
-
     <!--TODO : remove when phpcs-psr12 is in master -->
     <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
     <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>

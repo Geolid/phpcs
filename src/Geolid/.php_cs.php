@@ -44,6 +44,7 @@ return PhpCsFixer\Config::create()
         'short_scalar_cast' => true,
         'single_trait_insert_per_statement' => true,
         'trailing_comma_in_multiline_array' => true,
+        'final_class' => true,
     ])
     ->setRiskyAllowed(true)
 ;
