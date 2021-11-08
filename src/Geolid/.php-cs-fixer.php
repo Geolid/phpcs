@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-return PhpCsFixer\Config::create()
+return (new PhpCsFixer\Config)
     ->setRules([
         '@PSR2' => true,
         'array_syntax' => [
@@ -43,7 +43,7 @@ return PhpCsFixer\Config::create()
         ],
         'short_scalar_cast' => true,
         'single_trait_insert_per_statement' => true,
-        'trailing_comma_in_multiline_array' => true,
+        'trailing_comma_in_multiline' => ['elements' => ['arrays']],
     ])
     ->setRiskyAllowed(true)
 ;

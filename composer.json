@@ -12,9 +12,8 @@
     "require": {
         "php": "^7.3|^8.0",
         "escapestudios/symfony2-coding-standard": "^3.10",
-        "friendsofphp/php-cs-fixer": "^2.16.1",
-        "object-calisthenics/phpcs-calisthenics-rules": "^3.7",
-        "slevomat/coding-standard": "^6.0.8",
+        "friendsofphp/php-cs-fixer": "^3.2.1",
+        "slevomat/coding-standard": "^7.0.16",
         "squizlabs/php_codesniffer": "^3.5.3"
     },
     "config": {
@@ -22,8 +21,8 @@
     },
     "scripts": {
         "test": [
-            "vendor/bin/phpcs --standard=src/Geolid/ruleset.xml tests/Example/",
-            "vendor/bin/php-cs-fixer fix tests/ --dry-run --config=src/Geolid/.php_cs.php --diff --using-cache=no"
+            "vendor/bin/phpcs --standard=src/Geolid/ruleset.xml tests/Example/ -v",
+            "vendor/bin/php-cs-fixer fix tests/ --dry-run --config=src/Geolid/.php-cs-fixer.php --diff --using-cache=no -v"
         ]
     }
 }

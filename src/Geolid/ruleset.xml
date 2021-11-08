@@ -17,12 +17,6 @@
     <rule ref="PSR12.Operators.OperatorSpacing" />
     <rule ref="PSR12.Keywords.ShortFormTypeKeywords" />
 
-    <rule ref="ObjectCalisthenics.Metrics.MaxNestingLevel">
-        <properties>
-            <property name="maxNestingLevel" value="3" />
-        </properties>
-    </rule>
-
     <rule ref="Symfony.NamingConventions.ValidClassName" />
     <rule ref="Symfony.NamingConventions.ValidClassName.InvalidAbstractName">
         <exclude-pattern>*TestCase.php</exclude-pattern>
@@ -35,8 +29,7 @@
         </properties>
     </rule>
 
-    <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
     <!--TODO : remove when phpcs-psr12 is in master -->
     <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
-    <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall"/>
 </ruleset>
