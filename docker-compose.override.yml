@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app:
+    environment:
+      - COMPOSER_CACHE_DIR=/home/app/.cache/composer
+      - COMPOSER_HOME=/home/app/.config/composer
+    volumes:
+      - ~/.cache/composer:/home/app/.cache/composer
+      - ~/.config/composer:/home/app/.config/composer
